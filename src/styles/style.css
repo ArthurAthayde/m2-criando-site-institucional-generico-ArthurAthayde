@@ -1,1 +1,329 @@
 /* ------------------------------- Coloque sua estilização aqui ------------------------------- */
+
+/* HEADER */
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 14%;
+
+    align-items: center;
+
+    width: 100vw;
+    height: 100px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    border-bottom: 1px solid var(--blue-500);
+
+    background-color: var(--grey-2);
+}
+
+.header__container>button {
+    width: 241px;
+    height: 60px;
+
+    background-color: transparent;
+    color: var(--grey-6);
+
+    border: 1px solid var(--grey-6);
+}
+
+/* MAIN */
+
+body {
+    background-color: var(--grey-2);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--grey-6);
+}
+
+p {
+    color: var(--grey-4);
+}
+
+.main__container {
+    margin-top: 100px;
+}
+
+.dashboard__container {
+    width: 100%;
+    height: 781px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 44px;
+}
+
+.dashboard__container>h1 {
+    font-size: 52px;
+}
+
+.dashboard__container>p {
+    width: 770px;
+
+    text-align: center;
+
+    margin: 0 auto;
+}
+
+.dashboard__container>h1>span {
+    color: var(--blue-500);
+}
+
+.dashboard__container>a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 133px;
+    height: 60px;
+
+    border: solid 1px var(--blue-500);
+
+    background-color: var(--blue-500);
+
+    color: var(--grey-6);
+    font-size: 16px;
+    text-decoration: none;
+
+
+    cursor: pointer;
+}
+
+.aboutUs__container {
+    width: 100%;
+    padding: 0 14%;
+    height: 284px;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: var(--grey-1);
+}
+
+.aboutUs__container>span>p {
+    width: 500px;
+
+    text-align: start;
+}
+
+.faq__container {
+    display: flex;
+    gap: 200px;
+
+    width: 72%;
+
+    margin: 64px auto;
+}
+
+.faq__description {
+    min-width: 270px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+
+    text-align: justify;
+}
+
+.faq__description>h2 {
+    font-size: 26px;
+}
+
+.faq__description>p {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.faq__description>span {
+    width: 241px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--blue-500);
+
+    background-color: var(--blue-500);
+
+    color: var(--grey-6);
+}
+
+.faq__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    align-items: center;
+
+    min-width: 614px;
+}
+
+.faq__infos>span>h3 {
+    text-align: center;
+}
+
+.faq__infos>span>p {
+    padding: 22px 0;
+
+    text-align: justify;
+    line-height: 150%;
+}
+
+.students__container {
+    width: 72%;
+
+    margin: 128px auto;
+
+    display: flex;
+    gap: 200px;
+}
+
+
+.students__comments {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.students__comments>li>div {
+    display: flex;
+}
+
+.students__comments>li>div>span {
+    min-width: 182px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.students__comments>li>div>span>h3 {
+    font-weight: 600;
+}
+
+.students__comments>li>div>span>p {
+    font-size: 14px;
+
+}
+
+.students__comments>li>div>p {
+    font-size: 14px;
+
+    font-weight: 300;
+    color: var(--grey-6);
+    line-height: 150%;
+}
+
+.students__banner {
+    display: flex;
+    flex-direction: column;
+
+    padding: 80px 52px;
+
+    align-items: center;
+    gap: 32px;
+
+    min-width: 420px;
+    width: 420px;
+    height: 360px;
+
+    background-color: var(--blue-500);
+}
+
+.students__banner > p{
+    color: var(--grey-6);
+    line-height: 150%;
+    font-size: 14px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--grey-1);
+
+    height: 119px;
+}
+
+.openModalBtn, #openModalSpan{
+    cursor: pointer;
+}
+/* Modal */
+
+
+
+.modal__container > div{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    padding: 32px 16px;
+
+    width: 504px;
+    height: 397px;
+
+    background-color:var(--grey-2);
+
+    position: relative;
+}
+
+.modal__container > div > p{
+    line-height: 150%;
+}
+
+.modal__container > div > span{
+    position: absolute;
+    right: 16px;
+    top: 32px;
+
+    padding: 6px 12px;
+
+    border-radius: 5px;
+
+    background-color: var(--grey-3);
+    color: var(--grey-4);
+
+    cursor: pointer;
+}
+
+.modal__container > div > input{
+    background-color: var(--grey-1);
+
+    padding: 16px 26px;
+
+    font-size: 16px;
+    color: var(--grey-6);
+    
+    border: none;
+}
+
+.modal__container > div > button{
+    background-color: var(--blue-500);
+
+    padding: 16px 26px;
+
+    font-size: 14px;
+    color: var(--grey-6);
+    
+    border: none;
+}
