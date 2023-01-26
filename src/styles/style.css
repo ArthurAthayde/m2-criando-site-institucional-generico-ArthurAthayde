@@ -270,7 +270,10 @@ footer{
 }
 /* Modal */
 
-
+dialog{
+    border: solid 1px var(--grey-1);
+    margin: auto;
+}
 
 .modal__container > div{
     display: flex;
@@ -326,4 +329,8 @@ footer{
     color: var(--grey-6);
     
     border: none;
+}
+
+::backdrop{
+    background-color: rgba(0,0,0, 0.4);
 }
